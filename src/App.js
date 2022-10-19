@@ -3,21 +3,26 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="Container flex w-full">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className='Logo-box w-2/12'>
+          <img src={logo} alt='Logo' height={60} width={120} className='animate-spin transition'></img>
+        </div>
+        <div className='w-10/12 flex justify-end items-center'>
+          <ul className='flex px-4'>
+            <li className='Nav-item Active'>Home</li>
+            <li className='Nav-item'>About Us</li>
+            <li className='Nav-item'>Service</li>
+            <li className='Nav-item'>Shop</li>
+            <li className='Nav-item'>Contact</li>
+          </ul>
+        </div>
       </header>
+      <div className='Hero-section'>
+        <div>
+          
+        </div>
+      </div>
     </div>
   );
 }

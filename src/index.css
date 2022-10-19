@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background-color: #F4F5FA;
+}
+.Container{
+    @apply max-w-6xl block mx-auto my-0;
+}
+.App-header{
+    @apply w-full h-20 flex justify-between items-center mt-3;
+}
+.Nav-item{
+    @apply px-4 text-lg font-semibold text-black hover:text-purple-500 cursor-pointer;
+}
+.Active{
+    @apply text-gray-600;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Hero Section */
+.Hero-section{
+    @apply w-full flex justify-between items-center;
 }
