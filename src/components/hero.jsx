@@ -9,7 +9,7 @@ export default function hero() {
       <h3 className='text-lg text-gray-500 font-bold'>
           We Unlock Your
       </h3>
-      <h1 className='text-6xl text-primary font-bold py-4 font-display antialiased'>
+      <h1 className='text-3xl sm:text-6xl text-primary font-bold py-4 font-display antialiased'>
           INTUIVE BUSINESS GOALS
       </h1>
       <p className=' text-base text-gray-600 text-justify'>
