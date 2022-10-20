@@ -22,5 +22,6 @@ export default function hero() {
       <img src={banner} alt='Banner' className='cursor-pointer scale-75 hover:scale-100'></img>
     </div>
   </div>
+  
   )
 }
