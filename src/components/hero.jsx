@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export default function hero() {
   return (
-    <div className='Hero-section'>
+    <div className='Hero-section px-4 sm:px-1'>
     <div className='Left-text w-full sm:w-1/2'>
       <h3 className='text-lg text-gray-500 font-bold'>
           We Unlock Your
@@ -22,6 +22,6 @@ export default function hero() {
       <img src={banner} alt='Banner' className='cursor-pointer scale-75 hover:scale-100'></img>
     </div>
   </div>
-  
+
   )
 }
