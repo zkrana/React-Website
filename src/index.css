@@ -11,7 +11,7 @@ body{
     @apply w-full h-20 flex justify-between items-center mt-3;
 }
 .Nav-item{
-    @apply px-4 text-lg font-semibold text-black hover:text-purple-500 cursor-pointer;
+    @apply px-4 text-lg font-semibold text-black hover:text-primary cursor-pointer;
 }
 .Active{
     @apply text-gray-600;
@@ -19,5 +19,5 @@ body{
 
 /* Hero Section */
 .Hero-section{
-    @apply w-full flex justify-between items-center;
+    @apply w-full flex justify-between items-center flex-col sm:flex-row mt-8;
 }
