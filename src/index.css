@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 body{
-    background-color: #F4F5FA;
+   @apply bg-teal-50;
 }
 .Container{
-    @apply max-w-6xl block mx-auto my-0;
+    @apply max-w-6xl block mx-auto my-0 sm:px-2;
 }
+.Paragraph{
+    @apply text-base text-gray-400 text-justify;
+}
+
 .App-header{
     @apply w-full h-20 flex justify-between items-center mt-3;
 }
@@ -16,8 +20,55 @@ body{
 .Active{
     @apply text-gray-600;
 }
+/* Header Top Button */
+.Btn-red{
+    @apply bg-primary w-32 h-10 text-lg text-white shadow rounded-sm;
+}
+/* Button Display Condition */
+.Display-condition{
+    @apply hidden md:block;
+}
 
 /* Hero Section */
 .Hero-section{
-    @apply w-full flex justify-between items-center flex-col sm:flex-row mt-8;
+    @apply  px-6 lg:px-4 w-full flex justify-between items-center flex-col md:flex-row mt-8;
 }
+.Header-text{
+    @apply text-3xl sm:text-6xl text-primary font-bold py-4 font-display antialiased;
+}
+.mb-menu{
+    @apply absolute right-1 w-full top-12 py-3 sm:hidden mt-6 bg-white text-primary;
+}
+/* Feature Section */
+.Feature{
+    @apply px-6 lg:px-4 sm:px-1 flex justify-between gap-5 flex-col md:flex-row;
+}
+.Feature-heading{
+    @apply text-2xl sm:text-4xl text-black font-bold py-4 font-display antialiased;
+}
+.List-heading{
+    @apply w-10/12 text-2xl font-bold text-center lg:text-left inline pl-3;
+}
+.Btn-list{
+    @apply bg-primary w-12 h-12 text-lg text-white shadow-xl rounded-sm;
+}
+
+/* Promotion Section */
+
+.Promotion{
+    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-6 lg:px-4;
+}
+.Shape-mark{
+    @apply before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block;
+  }
+  .Subscription{
+    @apply bg-white hover:bg-primary hover:text-white w-28 h-11 text-lg text-black shadow-lg rounded cursor-pointer ml-1;
+  }
+  .Promotion-header{
+    @apply text-3xl md:text-6xl text-white font-bold;
+  }
+  @layer utilities{
+    .square{
+        aspect-ratio: 1/1;
+    }
+  }
