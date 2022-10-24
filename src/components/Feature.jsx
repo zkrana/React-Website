@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function feature() {
   return (
-    <div className='Feature'>
+    <div className='Feature pb-7'>
         <div className='w-full md:w-1/2 pr-16'>
             <h2 className='Feature-heading'>
                 What's different about manage?

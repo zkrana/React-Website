@@ -47,7 +47,7 @@ body{
     @apply text-2xl sm:text-4xl text-black font-bold py-4 font-display antialiased;
 }
 .List-heading{
-    @apply w-10/12 text-2xl font-bold text-center lg:text-left inline pl-3;
+    @apply w-10/12 text-lg md:text-2xl font-bold text-center lg:text-left inline pl-3;
 }
 .Btn-list{
     @apply bg-primary w-12 h-12 text-lg text-white shadow-xl rounded-sm;
@@ -67,8 +67,20 @@ body{
   .Promotion-header{
     @apply text-3xl md:text-6xl text-white font-bold;
   }
-  @layer utilities{
-    .square{
-        aspect-ratio: 1/1;
-    }
-  }
+
+/* Grid Gallery Section */
+.GridGallery{
+    @apply flex flex-col sm:flex-row md:space-x-2 gap-4 justify-between items-center my-12;
+}
+.Grid-item{
+    @apply w-full md:w-1/4 shadow-lg p-3 text-center;
+}
+.Grid-img{
+    @apply h-40 w-full shadow transition-all cursor-pointer hover:-translate-y-10;
+}
+.Grid-heading{
+    @apply block text-lg text-gray-600 font-semibold py-2;
+}
+.Grid-paragraph{
+    @apply text-base text-gray-500;
+}

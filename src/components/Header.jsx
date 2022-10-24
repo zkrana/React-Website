@@ -6,10 +6,10 @@ export default function Header() {
   const [showMobileMenu, setShowMobileMenu] = useState (false);
   return (
     <header className="App-header">
-    <div className='Logo-box w-2/12'>
+    <div className='Logo-box w-1/2 h-12 flex justify-start items-center pl-3 md:pl-0 md:w-2/12'>
       <img src={logo} alt='Logo' height={60} width={120} className='animate-pulse'></img>
     </div>
-    <div className='w-10/12 flex justify-end items-center'>
+    <div className='w-1/2 md:w-10/12 flex justify-end items-center'>
       <ul className='px-4 hidden md:flex'>
         <li className='Nav-item Active'>Home</li>
         <li className='Nav-item'>About Us</li>

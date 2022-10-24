@@ -12,7 +12,7 @@ export default function Promotion() {
         </p> 
         <blockquote className='text-2xl font-semibold italic text-center text-white pt-7'>
           When you look
-          <span  className='Shape-mark'>
+          <span  className='Shape-mark mx-2'>
             <span className='relative text-slate-700'>annoyed</span>
           </span>
           all the time, people think that you're busy.
