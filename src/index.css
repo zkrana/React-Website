@@ -62,7 +62,7 @@ body{
     @apply before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block;
   }
   .Subscription{
-    @apply bg-white hover:bg-primary hover:text-white w-28 h-11 text-lg text-black shadow-lg rounded cursor-pointer ml-1;
+    @apply bg-white hover:bg-primary hover:text-white w-28 h-11 text-lg text-black shadow-lg rounded cursor-pointer ml-1 mt-3 sm:mt-0;
   }
   .Promotion-header{
     @apply text-3xl md:text-6xl text-white font-bold;
