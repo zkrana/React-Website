@@ -1,0 +1,25 @@
+.Main-Faq{
+    @apply block text-center p-[20px] mb-[60px];
+}
+.Wrap{
+    @apply max-w-[600px] block mx-auto bg-white shadow-lg p-10;
+}
+.Wrap h2{
+    @apply text-[32px] font-bold pb-5;
+}
+.Faq {
+    @apply text-[20px] text-left p-[10px] bg-[aliceblue] mb-[10px] rounded shadow;
+  }
+  .Plus {
+    background: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 8px;
+  }
+  .Answer {
+    background: white;
+    padding: 5px 15px;
+    margin-top: 10px;
+  }

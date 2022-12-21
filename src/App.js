@@ -1,20 +1,20 @@
-import Header from './components/Header.jsx';
-import Hero from './components/Hero.jsx';
-import Feature from './components/Feature.jsx';
-import Gridgallery from './components/Gridgallery.jsx';
-import Promotion from './components/Promotion.jsx';
-import Footer from './components/Footer.jsx';
+
+import React from 'react';
+import Home from './Home';
+import About from './About';
+import Service from './Service';
+import Faq from './components/Accordion/Faq';
+import Single from './Singleproduct.jsx';
+import { Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div>
-      <div className="Container flex w-full">
-        <Header />
-        <Hero />
-        <Feature />
-      </div>
-      <Promotion />
-      <Gridgallery />
-      <Footer />
+      <Routes>
+        <Route index path='/' element={<Home />} />
+        <Route path='about' element={<About />} />
+        <Route path='service' element={<Service />} />
+        <Route path='single' element={<Single />} />
+      </Routes>
     </div>
   );
 }

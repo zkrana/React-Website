@@ -5,39 +5,79 @@ body{
    @apply bg-teal-50;
 }
 .Container{
-    @apply max-w-6xl block mx-auto my-0 sm:px-2;
+    @apply max-w-6xl block mx-auto sm:px-2;
 }
 .Paragraph{
-    @apply text-base text-gray-400 text-justify;
+    @apply text-base text-[#606060] text-justify;
 }
 
 .App-header{
-    @apply w-full h-20 flex justify-between items-center mt-3;
+    @apply w-full h-16 flex justify-between items-center;
+}
+.Topbar-bg{
+    @apply bg-white py-3 sm:py-0;
+}
+.Top-bar{
+    @apply h-12 flex justify-between flex-wrap items-center;
+}
+.Store-details{
+    @apply w-full sm:w-1/2 flex;
+}
+.Store-acc{
+    @apply w-full sm:w-1/2 flex justify-start sm:justify-end mt-2 sm:mt-0;
+}
+.Language{
+    @apply w-1/2 sm:w-24 flex justify-start px-2 sm:px-0 items-center;
+}
+.Select{
+    @apply bg-transparent cursor-pointer -mt-[2px] pl-[5px];
+}
+.Location{
+    @apply w-1/2 sm:w-40 ml-4 pr-2 sm:pr-0 flex justify-end;
+}
+.Location span{
+    @apply flex justify-end sm:justify-start;
+}
+
+.Acc-wrap{
+    @apply w-full justify-between sm:w-[250px] flex sm:justify-end px-2 sm:px-0;
+}
+.Acc-wrap span{
+    @apply flex;
+}
+.Acc-wrap span a{
+    @apply flex items-center;
 }
 .Nav-item{
     @apply px-4 text-lg font-semibold text-black hover:text-primary cursor-pointer;
 }
-.Active{
-    @apply text-gray-600;
+.active{
+    @apply text-primary;
 }
 /* Header Top Button */
 .Btn-red{
-    @apply bg-primary w-32 h-10 text-lg text-white shadow rounded-sm;
+    @apply bg-primary px-6 h-12 text-lg text-white shadow rounded-sm;
 }
 /* Button Display Condition */
 .Display-condition{
     @apply hidden md:block;
 }
-
+.Header-text{
+    @apply text-2xl sm:text-4xl text-primary font-bold py-4 font-display antialiased;
+}
+.Sub-heading{
+    @apply text-gray-500 text-base;
+}
+.Header-para{
+    @apply text-[#606060] text-base;
+}
 /* Hero Section */
 .Hero-section{
-    @apply  px-6 lg:px-4 w-full flex justify-between items-center flex-col md:flex-row mt-8;
+    @apply  px-6 lg:px-4 w-full flex justify-between items-center flex-col md:flex-row;
 }
-.Header-text{
-    @apply text-3xl sm:text-6xl text-primary font-bold py-4 font-display antialiased;
-}
+
 .mb-menu{
-    @apply absolute right-1 w-full top-12 py-3 sm:hidden mt-6 bg-white text-primary;
+    @apply absolute right-1 w-full top-24 py-3 sm:hidden mt-6 bg-white text-primary;
 }
 /* Feature Section */
 .Feature{
@@ -76,11 +116,158 @@ body{
     @apply w-full md:w-1/4 shadow-lg p-3 text-center;
 }
 .Grid-img{
-    @apply h-40 w-full shadow transition-all cursor-pointer hover:-translate-y-10;
+    @apply h-40 w-full shadow transition-all cursor-pointer sm:hover:-translate-y-10;
 }
 .Grid-heading{
     @apply block text-lg text-gray-600 font-semibold py-2;
 }
 .Grid-paragraph{
-    @apply text-base text-gray-500;
+    @apply text-base text-[#606060];
+}
+
+/* About Us Page */
+.Team-wrapper{
+    @apply flex justify-between items-center flex-col sm:flex-row flex-wrap mt-12 mb-[120px] mx-3 sm:mx-0;
+}
+.Section-title{
+    @apply h-[200px] mb-[140px] text-center;
+}
+.Team-member{
+    @apply relative w-[100%] sm:w-[30%] h-[260px];
+    transition: .2s ease-in-out;
+}
+.Thumbnail{
+    @apply w-[100%] h-[260px] bg-[#fefefe] rounded-lg relative shadow-md;
+}
+.Thumbnail img{
+    @apply absolute bottom-0 left-[50%] transform -translate-x-[50%] -translate-y-[0%]
+}
+.Details{
+    @apply invisible absolute bottom-0 p-[10px] text-white;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all .3s ease-in-out;
+}
+.Team-member:hover .Details{
+    visibility: visible;
+    cursor: pointer;
+    background: rgba(8, 8, 8, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(36, 41, 99, 0.37);
+    backdrop-filter: blur( 17px );
+    -webkit-backdrop-filter: blur( 17px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transform: translateY(0);
+}
+.Details h4{
+    @apply font-bold text-[20px];
+}
+.Details h5{
+    @apply font-bold text-[16px];
+}
+
+/* Modal */
+.Overlay{
+    @apply fixed bg-[#0009] left-0 right-0 top-0 bottom-0 w-full h-screen flex justify-center items-center z-10;
+}
+.Modal-container{
+    @apply w-[600px] h-[300px] bg-white flex;
+}
+.Modal-container img{
+    @apply w-1/2 h-[100%] object-cover;
+}
+.Content-wrapper{
+    @apply w-1/2 p-3 relative;
+}
+.Close-icon{
+    @apply float-right text-[20px] font-semibold cursor-pointer;
+}
+.Modal-right{
+    @apply absolute w-[calc(100%-20px)] h-[calc(100%-80px)] mt-[60px] text-center;
+}
+.Modal-head{
+    @apply font-bold text-[32px] uppercase;
+}
+.Email{
+    @apply border focus:outline-none w-full h-10 pl-3 my-2;
+}
+.Submit{
+    @apply border-none bg-primary text-white font-bold uppercase w-[calc(100%-50%)] h-12 rounded-sm shadow hover:bg-[green];
+}
+/* Service page Service Support Component */
+.Support-wrapper{
+    @apply flex justify-between flex-wrap flex-col sm:flex-row;
+}
+.Support-item{
+    @apply w-full sm:w-1/2 md:w-1/3 text-center px-7 py-4 sm:py-12;
+}
+.Support-item img{
+    @apply block mx-auto pb-3;
+}
+.Support-details h4{
+    @apply text-[18px] font-bold py-3;
+}
+/* Service page Pricing Component */
+.Pricing-wrapper{
+    @apply flex justify-between flex-wrap flex-col sm:flex-row my-10 gap-10 px-5 sm:px-0;
+}
+.Price-item{
+    @apply w-full sm:w-[47%] md:w-[30%] text-center bg-white shadow-lg hover:shadow-2xl;
+}
+.Price-item:hover button{
+    background-color: green;
+    color: #fff;
+    border: none;
+}
+.Price-header{
+    @apply w-full py-10 bg-[#00BAF1];
+}
+.Price-amount{
+    @apply py-5;
+}
+.Price-amount span{
+    @apply text-[60px] font-bold text-primary;
+}
+.Price-title{
+    @apply text-[1.8rem] text-white font-bold uppercase;
+}
+.Price-body{
+    @apply pt-4;
+}
+.Package-details ul li{
+    @apply py-3;
+}
+.Order-button{
+    @apply my-5;
+}
+.Order-button button{
+    @apply border rounded shadow px-5 py-3 border-primary;
+}
+.Order-button button:hover{
+    animation-name: animation-wobble-skew;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes animation-wobble-skew {
+    16.65% {
+        transform: skew(-12deg);
+      }
+      33.3% {
+        transform: skew(10deg);
+      }
+      49.95% {
+        transform: skew(-6deg);
+      }
+      66.6% {
+        transform: skew(4deg);
+      }
+      83.25% {
+        transform: skew(-2deg);
+      }
+      100% {
+        transform: skew(0);
+      }
+      
 }
