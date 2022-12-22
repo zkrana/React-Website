@@ -1,0 +1,27 @@
+.Reviews-wrapper{
+    @apply my-[20px] bg-white p-[20px] shadow;
+}
+.Section-head {
+    @apply flex justify-between items-center flex-wrap mb-[10px] sm:mb-0;
+}
+.Title-n-action {
+    @apply w-full sm:w-[75%] py-[20px];
+}
+.Q-action{
+    @apply w-full sm:w-[25%] py-0 sm:py-[20px] text-left sm:text-right;
+}
+.Title-n-action h2 {
+    @apply text-[22px] font-semibold pb-[10px];
+  }
+.Reviews-para {
+    @apply text-gray-400;
+}
+.Btn-outline{
+    @apply border-[2px] border-primary rounded p-[10px];
+}
+.Reviw-field{
+    @apply flex justify-center items-center py-[50px] border-t-2 border-[aliceblue];
+}
+.Review-img{
+    @apply w-[100px] block mx-auto p-[20px] mb-[20px] rounded-[50%] bg-[aliceblue];
+}

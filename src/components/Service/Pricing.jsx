@@ -70,7 +70,11 @@ export default function Pricing() {
                         </ul>
                     </div>
                     <div className="Order-button">
-                        <button type='submit' name='package-order'> Order Now </button>
+                        <button type='submit' name='package-order'> 
+                            <Link to='../../single'>
+                                Order Now
+                            </Link>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -99,7 +103,11 @@ export default function Pricing() {
                         </ul>
                     </div>
                     <div className="Order-button">
-                        <button type='submit' name='package-order'> Order Now </button>
+                        <button type='submit' name='package-order'> 
+                            <Link to='../../single'>
+                                Order Now
+                            </Link>
+                        </button>
                     </div>
                 </div>
             </div>

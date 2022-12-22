@@ -67,7 +67,7 @@ export default function Footer() {
                         <h2 className='text-lg font-semibold'> Subscription </h2>
                         <div  className='mt-7'>
                         <form>
-                            <input type="email" name="email" placeholder="Email" className='text-black inline h-11 border-none rounded focus:outline-none pl-3'></input>
+                            <input type="email" name="email" placeholder="Email" className='text-black inline h-11 border-none rounded focus:outline-none pl-3 w-[unset]'></input>
                             <input type="submit" className='Subscription' value="Submit"></input>
                         </form>
                         </div>

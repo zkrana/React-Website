@@ -30,7 +30,7 @@ body{
     @apply w-1/2 sm:w-24 flex justify-start px-2 sm:px-0 items-center;
 }
 .Select{
-    @apply bg-transparent cursor-pointer -mt-[2px] pl-[5px];
+    @apply bg-transparent cursor-pointer -mt-[2px] py-[5px] ml-[3px] w-[unset] h-[unset] border-0;
 }
 .Location{
     @apply w-1/2 sm:w-40 ml-4 pr-2 sm:pr-0 flex justify-end;
@@ -56,7 +56,7 @@ body{
 }
 /* Header Top Button */
 .Btn-red{
-    @apply bg-primary px-6 h-12 text-lg text-white shadow rounded-sm;
+    @apply bg-primary px-6 h-12 text-[15px] sm:text-lg text-white shadow rounded-sm;
 }
 /* Button Display Condition */
 .Display-condition{
@@ -271,3 +271,85 @@ body{
       }
       
 }
+
+
+/* Buy Now Cart Modal */
+.Cart-container {
+    @apply max-w-[600px] bg-white shadow p-[10px] h-[300px] sm:h-[250px] relative;
+  }
+
+.Content-show {
+    width: 100%;
+    padding: 10px;
+  }
+  .Cart-wrappers {
+    width: calc(100% - 20px);
+    margin-top: 30px;
+    display: flex;
+  }
+  .cart-info {
+    flex: 0 0 180px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+    position: relative;
+    z-index: 10;
+  }
+  .cart-quantity {
+    border-bottom: 1px solid #797979;
+    margin-bottom: 10px;
+}
+.cart-quantity {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+  }
+  .cart-info > span {
+    padding: 0 0 5px;
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .cart-info > span > span {
+    font-weight: bold;
+    color: #111;
+    font-size: 15px;
+  }
+
+  .Button-wrap {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 20px;
+  }
+
+/* Cart Page */
+
+.Cart-wrapper{
+    @apply bg-white shadow rounded p-[10px];
+}
+.Cart-table{
+    @apply w-full;
+}
+.Cart-table thead td {
+    @apply px-[10px] py-[14px] text-[#666] text-[13px] font-[600] bg-[#f5f7f9] text-left border-r-2 border-white;
+  }
+  .Total-cart {
+    @apply mt-5 flex justify-end;
+}
+.Cart-total {
+    @apply w-[200px];
+  }
+table.Cart-total td {
+    @apply text-[18px];
+}
+.Cart-total tbody td {
+    @apply py-[12px] px-[10px] border-b-[1px] border-[#eee];
+}
+
+.Cart-total td.amount {
+    @apply font-bold text-primary text-right;
+  }

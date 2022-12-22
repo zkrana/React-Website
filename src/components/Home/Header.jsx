@@ -26,7 +26,7 @@ export default function Header() {
                     </div>
                     <div className="Location">
                     <span>
-                      <img className='mr-2' src={location} width={20} height={20} alt='USA' /> <span className='-my-[3px] text-left pl-1'>Find location</span>
+                      <img className='mr-2' src={location} width={20} height={20} alt='USA' /> <span className='text-left pl-1'>Find location</span>
                     </span>
                     </div>
                 </div>

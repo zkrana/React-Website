@@ -19,7 +19,7 @@ export default function Promotion() {
         </blockquote>
         <div  className='mt-7'>
           <form>
-            <input type="email" name="email" placeholder="Email" className='inline h-11 border-none rounded focus:outline-none pl-3'></input>
+            <input type="email" name="email" placeholder="Email" className='inline h-11 border-none rounded focus:outline-none pl-3 w-[unset]'></input>
             <input type="submit" className='Subscription' value="Submit"></input>
           </form>
         </div>
