@@ -1,5 +1,5 @@
 .Page-bar {
-  @apply flex justify-start items-center pt-[10px] pb-[0] sm:py-[10px] px-[0];
+  @apply flex justify-start items-center pt-[10px] pb-[0] sm:py-[10px] px-[10px] sm:px-0;
   }
   .Product-wrapper{
     @apply flex justify-between items-center flex-wrap bg-white my-[20px] p-[10px] shadow;

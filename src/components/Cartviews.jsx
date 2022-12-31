@@ -26,7 +26,11 @@ import { NavLink } from 'react-router-dom';
                                 View Cart
                             </NavLink>
                         </button>
-                        <button class="Btn-outline">Confirm Order</button>
+                        <button class="Btn-outline">
+                            <NavLink to='../checkout'>
+                                Confirm Order
+                            </NavLink>
+                        </button>
                     </div>
                 </div>
             </div>

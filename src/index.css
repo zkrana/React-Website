@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body{
-   @apply bg-teal-50;
+   @apply bg-white;
 }
 .Container{
     @apply max-w-6xl block mx-auto sm:px-2;
@@ -12,10 +12,10 @@ body{
 }
 
 .App-header{
-    @apply w-full h-16 flex justify-between items-center;
+    @apply w-full h-14 sm:h-[5rem] flex justify-between items-center;
 }
 .Topbar-bg{
-    @apply bg-white py-3 sm:py-0;
+    @apply bg-white py-3 sm:py-0 shadow-sm;
 }
 .Top-bar{
     @apply h-12 flex justify-between flex-wrap items-center;
@@ -353,3 +353,55 @@ table.Cart-total td {
 .Cart-total td.amount {
     @apply font-bold text-primary text-right;
   }
+  /* Checkioutpage */
+
+  .Checkout-wrapper {
+    @apply flex flex-wrap justify-between p-[10px] sm:p-0;
+  }
+  .Customer-info {
+    @apply w-full sm:w-[35%] p-[20px] bg-white rounded shadow-sm;
+}
+.Customer-details{
+    @apply w-full sm:w-[62%] rounded shadow-sm;
+}
+.Card-delivery {
+    @apply w-full flex flex-wrap gap-[5px] sm:gap-[30px] h-fit mt-7 sm:mt-0;
+  }
+  .Order-overview {
+    @apply bg-white mt-[20px] rounded shadow-sm p-[20px];
+  }
+  .checkout-final-action {
+    @apply p-5 sm:p-0 justify-center sm:justify-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-top: 1px solid #d6d6d6;
+    padding-top: 20px;
+    margin-bottom: 50px;
+  }
+  .checkout-final-action .agree-text {
+    flex: 1 1 auto;
+    position: relative;
+    padding-left: 30px;
+  }
+  .checkout-final-action .agree-text input {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+  }
+  #button-confirm {
+    @apply mt-3 sm:mt-0;
+}
+
+
+
+@media (min-width: 640px) and (max-width:1003px){
+.Card-delivery {
+  gap: 10px !important;
+}
+.Extra-pad{
+    @apply pt-[.8rem];
+}
+}

@@ -1,0 +1,67 @@
+.Heading{
+    @apply mt-10 py-10 text-center;
+}
+.Contact-Head{
+    @apply font-bold text-[55px];
+}
+.Contact-wrapper{
+    @apply p-2 flex flex-wrap bg-[#f7f7f7] shadow rounded mt-3;
+}
+.Contact-info{
+    @apply w-full sm:w-[40%] bg-[#3E1F92] rounded p-5 relative overflow-hidden;
+}
+.Contact-form{
+    @apply w-full sm:w-[60%] p-5;
+}
+.Info-wrapper h2{
+    @apply text-white text-[25px];
+}
+.Info-wrapper p{
+    @apply text-gray-300 text-[16px];
+}
+.Contact-icon{
+    @apply py-6;
+}
+.Contact-icon li {
+    @apply flex justify-start items-center py-2;
+  }
+.Contact-icon li span{
+    @apply text-white pl-3;
+}
+.bigCircle{
+    @apply absolute -right-[60px] -bottom-[60px] bg-[#FA949D] rounded-[50%] w-[200px] h-[200px];
+}
+.smallCircle{
+    @apply absolute right-[60px] bottom-[60px] bg-[#8956e9ea] rounded-[50%] w-[100px] h-[100px] z-10;
+}
+
+.Social {
+    @apply w-[180px] flex justify-between items-center mt-[10rem];
+  }
+.Social li{
+    @apply flex justify-center items-center w-[40px] h-[40px] mr-2 z-20 hover:bg-[#FA949D] hover:rounded-full cursor-pointer text-center;
+}
+.Social li img{
+    @apply w-[30px] h-[30px] p-[3px];
+}
+
+/* Form Components */
+
+.form-control {
+    @apply flex justify-between gap-5 flex-wrap mb-[15px];
+}
+.form-group {
+    @apply w-full sm:w-[47%];
+}
+.check-box {
+    @apply flex w-full items-center;
+  }
+  .check-box input{
+    @apply mx-[10px];
+  }
+  .check-box input:first-child {
+    @apply ml-0;
+  }
+  .Contact-submit{
+    @apply text-white bg-[#3E1F92] rounded shadow-sm px-[15px] py-[10px] text-right;
+  }

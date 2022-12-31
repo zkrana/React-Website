@@ -1,0 +1,68 @@
+.Section-head {
+    @apply py-[10px] px-[0] border-b-[1px] border-b-[#cbced0];
+  }
+
+.Section-head h2{
+    @apply text-[18px] sm:text-[25px];
+}
+.Section-head span {
+    @apply bg-primary text-white w-[25px] sm:w-[30px] h-[25px] sm:h-[30px] rounded-[50%] inline-flex justify-center items-center mr-[5px] text-[18px] align-text-bottom;
+  }
+.multiple-form-group {
+    @apply flex gap-[10px] mt-[10px];
+}
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+.form-group label {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .Payment-wrapper{
+    @apply bg-white rounded shadow-sm p-[20px] w-full;
+  }
+  .radio-inline {
+    @apply leading-[25px] mr-[15px];
+  }
+  .radio-inline input {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  input[type="radio"], input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+  .Payment-wrapper p {
+    padding: 15px 0;
+  }
+
+  .Accepted-card{
+    @apply mt-5;
+  }
+  .Accepted-card h5 {
+    @apply pb-[10px];
+}
+.Table{
+    @apply w-full mt-3;
+}
+.Table thead td {
+    padding: 14px 10px !important;
+    color: #666;
+    font-size: 13px;
+    font-weight: 600;
+    background: #f5f7f9;
+    border-right: 2px solid white;
+  }
+  .amount {
+    @apply text-primary;
+}
+.total{
+    @apply border-b-[1px] border-b-[#d6d6d6] py-[10px];
+}
+.total td{
+    @apply py-[10px];
+}

@@ -94,7 +94,11 @@ export default function Cart() {
                         </button>
                     </div>
                     <div className='w-1/2 flex items-center justify-end'>
-                        <button class="Btn-outline">Continue Order</button>
+                        <button class="Btn-outline">
+                            <NavLink to='/checkout'>
+                                Continue Order
+                            </NavLink>
+                        </button>
                     </div>
                 </div>
             </div>

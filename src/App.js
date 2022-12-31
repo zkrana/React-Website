@@ -6,7 +6,8 @@ import Service from './Service';
 import Single from './Singleproduct.jsx';
 import Cartpage from './Cart'
 import { Route, Routes } from 'react-router-dom';
-import Cart from './Cart';
+import Checkout from './Checkout';
+import Contact from './Contact';
 function App() {
   return (
     <div>
@@ -16,6 +17,8 @@ function App() {
         <Route path='service' element={<Service />} />
         <Route path='single' element={<Single />} />
         <Route path='cartpage' element={<Cartpage />} />
+        <Route path='checkout' element={<Checkout />} />
+        <Route path='contact' element={<Contact />} />
       </Routes>
     </div>
   );
