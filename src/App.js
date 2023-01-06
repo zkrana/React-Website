@@ -8,6 +8,8 @@ import Cartpage from './Cart'
 import { Route, Routes } from 'react-router-dom';
 import Checkout from './Checkout';
 import Contact from './Contact';
+import Shop from './Shop';
+
 function App() {
   return (
     <div>
@@ -19,6 +21,7 @@ function App() {
         <Route path='cartpage' element={<Cartpage />} />
         <Route path='checkout' element={<Checkout />} />
         <Route path='contact' element={<Contact />} />
+        <Route path='shop' element={<Shop />} />
       </Routes>
     </div>
   );

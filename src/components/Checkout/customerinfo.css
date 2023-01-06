@@ -8,14 +8,13 @@
 .Section-head span {
     @apply bg-primary text-white w-[25px] sm:w-[30px] h-[25px] sm:h-[30px] rounded-[50%] inline-flex justify-center items-center mr-[5px] text-[18px] align-text-bottom;
   }
-.multiple-form-group {
+.multiple-form-groups {
     @apply flex gap-[10px] mt-[10px];
 }
-.form-group {
-    margin-bottom: 20px;
+.form-groups {
     position: relative;
   }
-.form-group label {
+.form-groups label {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 5px;
