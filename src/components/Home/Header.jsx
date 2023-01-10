@@ -32,12 +32,7 @@ export default function Header() {
                 </div>
                 <div className="Store-acc">
                   <div className="Acc-wrap">
-                    <span>
-                      <img src={login} width={20} height={20} alt='USA' className='mr-[4px]'/> <a href='login.com' className='-mt-[3px]'> Login </a> <span className='-mt-[3px]'> / </span> <a href='signup.com' className='-mt-[3px]'> Signup </a>
-                    </span>
-                    <span className='ml-2'>
-                      <a href='basket.com'> <img className='mr-2' src={cart} width={20} height={20} alt='USA' /> <span className='-mt-[2px]'>Basket</span> </a>
-                    </span>
+                    <button className='Btn-red Display-condition' onClick={() => setOpenModal(true)}>Discount</button>
                   </div>
                 </div>
             </div>
@@ -80,8 +75,16 @@ export default function Header() {
                 </li>
               </ul>
 
-              <button className='Btn-red Display-condition' onClick={() => setOpenModal(true)}>Get In Touch</button>
-
+              <div className='Acc-wrap'>
+                <span>
+                    <NavLink to='../../login'>
+                        <img src={login} width={20} height={20} alt='Login' className='mr-[4px]'/>
+                    </NavLink>
+                </span>
+                <span className='ml-2'>
+                    <a href='basket.com'> <img className='mr-2' src={cart} width={20} height={20} alt='Cart' /> </a>
+                </span>
+              </div>
               <div className='flex w-20 h-20 justify-center items-center md:hidden'>
                 <FontAwesomeIcon onClick={ () => setShowMobileMenu(!showMobileMenu)} icon={faBars} className=' pl-2 text-primary text-3xl cursor-pointer relative'>
                 </FontAwesomeIcon>

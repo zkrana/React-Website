@@ -40,7 +40,7 @@ body{
 }
 
 .Acc-wrap{
-    @apply w-full justify-between sm:w-[250px] flex sm:justify-end px-2 sm:px-0;
+    @apply w-[80px] justify-between sm:w-[250px] flex sm:justify-end px-2 sm:px-0;
 }
 .Acc-wrap span{
     @apply flex;
@@ -60,7 +60,7 @@ body{
 }
 /* Button Display Condition */
 .Display-condition{
-    @apply hidden md:block;
+    @apply hidden md:block h-[2.5rem];
 }
 .Header-text{
     @apply text-2xl sm:text-4xl text-primary font-bold py-4 font-display antialiased;

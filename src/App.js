@@ -9,7 +9,8 @@ import { Route, Routes } from 'react-router-dom';
 import Checkout from './Checkout';
 import Contact from './Contact';
 import Shop from './Shop';
-
+import Login from './components/Login/Login';
+import Register from './components/Login/Register';
 function App() {
   return (
     <div>
@@ -22,6 +23,8 @@ function App() {
         <Route path='checkout' element={<Checkout />} />
         <Route path='contact' element={<Contact />} />
         <Route path='shop' element={<Shop />} />
+        <Route path='login' element={<Login />} />
+        <Route path='register' element={<Register />} />
       </Routes>
     </div>
   );
